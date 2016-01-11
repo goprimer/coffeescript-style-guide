@@ -498,7 +498,7 @@ When the plugin list appears, type coffeelint. Among the entries you should see 
 
 ## Updating the linter
 
-The linting rules are stored in coffeelint.json at the root of our repository. You can read about the different options here http://www.coffeelint.org/
+The linting rules are stored in coffeelint.json at the root of our yoffa repository. You can read about the different options here http://www.coffeelint.org/
 
 [coffeescript]: http://jashkenas.github.com/coffee-script/
 [coffeescript-issue-425]: https://github.com/jashkenas/coffee-script/issues/425
