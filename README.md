@@ -511,7 +511,9 @@ When the plugin list appears, type coffeelint. Among the entries you should see 
 ```
 
 #### Atom
-To install the Atom linter run the following in terminal:
+To install the Atom linter, go to Preferences (⌘,) and select Install. Search for linter & linter-coffeelint and install these two packages.
+
+Alternatively, to install the Atom linter run the following in terminal:
 
 `apm install linter`
 
