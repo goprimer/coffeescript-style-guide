@@ -463,8 +463,11 @@ console.log(args...) # Yes
 (a, b, c, rest...) -> # Yes
 ```
 
-## Installing a Linter
+## Linters
 
+### Installing a Linter
+
+#### Sublime Text 3
 Install instruction:
 
 1. Get Package Control https://packagecontrol.io/installation
@@ -496,7 +499,27 @@ When the plugin list appears, type coffeelint. Among the entries you should see 
 
 7. Check by opening a coffeescript file, adding some errors and saving. You should get a popup about a bunch of linting things.
 
-## Updating the linter
+**Performance Improvement**: You may want to set your linter to only update on first open and saving a file. You can do so by editing your SublimeLinter User Settings:
+1. Open Command Pallete
+2. Search for 'SublimeLinter Settings' and select the 'Preferences: SublimeLinter Settings - User'
+3. You should be editing a file called `SublineLinter.sublime-settings`
+4. Change your `lint_mode` setting to "load/save":
+```
+"user": {
+        "lint_mode": "load/save",
+        "linters": [...
+```
+
+#### Atom
+To install the Atom linter run the following in terminal:
+
+`apm install linter`
+
+`apm install linter-coffeelint`
+
+You will likely have to reboot Atom for the changes to take effect.
+
+### Updating the linter
 
 The linting rules are stored in coffeelint.json at the root of our yoffa repository. You can read about the different options here http://www.coffeelint.org/
 
